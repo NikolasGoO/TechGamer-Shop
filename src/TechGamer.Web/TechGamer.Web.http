@@ -1,0 +1,11 @@
+@TechGamer.Web_HostAddress = http://localhost:5062
+
+GET {{TechGamer.Web_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{TechGamer.Web_HostAddress}}/todos/1
+Accept: application/json
+
+###
