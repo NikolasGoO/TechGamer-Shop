@@ -41,10 +41,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Views\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\Senac.eShop.Core\TechGamer.Core.csproj" />
 	  <ProjectReference Include="..\src\TechGamer.Application\TechGamer.Application.csproj" />
 	</ItemGroup>
