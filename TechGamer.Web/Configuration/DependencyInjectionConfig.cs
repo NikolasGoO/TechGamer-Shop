@@ -1,8 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.DataAnnotations;
 using Polly;
 using Polly.Extensions.Http;
 using Polly.Retry;
+using TechGamer.Core.Extensions;
+using TechGamer.Web.Extensions;
+using TechGamer.Web.Services;
+using TechGamer.Web.Services.Handlers;
 
 namespace TechGamer.Web.Configuration
 {
@@ -19,7 +24,7 @@ namespace TechGamer.Web.Configuration
             #region HttpServices
             services.AddTransient<HttpClientAuthorizationDelegatingHandler>();
 
-            services.AddHttpClient<IAuthService, AuthenticationService>()
+            services.AddHttpClient<IAuthService, Services.AuthenticationService>()
                 .AddPolicyHandler(PollyExtensions.WaitAndTry())
                 .AllowSelfSignedCertificate()
                 .AddTransientHttpErrorPolicy(

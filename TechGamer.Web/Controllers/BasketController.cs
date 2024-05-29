@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TechGamer.Application.ViewModel;
+using TechGamer.Web.Models;
+using TechGamer.Web.Services;
 
 namespace TechGamer.Web.Controllers
 {

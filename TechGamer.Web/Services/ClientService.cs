@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using System.Net;
 using TechGamer.Core.Communication;
+using TechGamer.Web.Extensions;
 using TechGamer.Web.Models;
 
 namespace TechGamer.Web.Services

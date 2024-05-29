@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
+﻿
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Options;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using TechGamer.Application.DTOs.Response;
-using TechGamer.Application.ViewModel;
-using TechGamer.Core.Identity;
+using TechGamer.Web.Extensions;
+using TechGamer.Web.Models;
 
 namespace TechGamer.Web.Services
 {

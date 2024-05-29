@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text;
 using TechGamer.Core.Communication;
+using TechGamer.Web.Extensions;
 
 namespace TechGamer.Web.Services
 {
