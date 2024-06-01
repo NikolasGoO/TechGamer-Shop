@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
 using TechGamer.Core.Identity;
+using TechGamer.Web.Extensions;
+using AppSettings = TechGamer.Core.Identity.AppSettings;
 
 namespace TechGamer.Web.Configuration
 {

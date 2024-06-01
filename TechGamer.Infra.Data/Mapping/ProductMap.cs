@@ -15,7 +15,8 @@ namespace TechGamer.Infra.Data.Mapping
         {
             builder.ToTable("Product");
             builder.Property(p => p.Name).HasMaxLength(50).IsRequired();
-            builder.Property(p => p.Description).HasMaxLength(250);
+            builder.Property(p => p.Brand).HasMaxLength(50);
+            builder.Property(p => p.Description).HasMaxLength(1000);
             builder.Property(p => p.Active).HasDefaultValue(true).IsRequired();
             builder.Property(p => p.Price).HasPrecision(10, 2).IsRequired();
             builder.Property(p => p.Image).HasMaxLength(250);
